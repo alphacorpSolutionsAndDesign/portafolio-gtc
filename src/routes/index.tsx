@@ -1,7 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
+import bannerImg from "@/assets/banner.png";
 
 const BASE = "https://portafolio.alphacorp.cl/assets/img";
+
 
 const skills = [
   { name: "HTML5", img: `${BASE}/logos/html5.png` },
