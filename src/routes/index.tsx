@@ -95,7 +95,7 @@ function Index() {
         <section
           id="inicio"
           className="relative flex min-h-screen items-center justify-center bg-cover bg-center px-4 py-32"
-          style={{ backgroundImage: `url(${BASE}/banner.png)` }}
+          style={{ backgroundImage: `url(${bannerImg})` }}
         >
           <div className="absolute inset-0 bg-[var(--hero-overlay)]" />
           <div className="relative mx-auto max-w-4xl text-center">
