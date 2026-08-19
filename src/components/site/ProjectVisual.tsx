@@ -11,14 +11,14 @@ export function ProjectVisual({ project, className }: { project: Project; classN
         loading="lazy"
         width="800"
         height="600"
-        className={cn("aspect-[16/10] w-full object-cover object-top", className)}
+        className={cn("aspect-video w-full object-cover object-top", className)}
       />
     );
   }
 
   return (
     <div
-      className={cn("project-placeholder aspect-[16/10]", className)}
+      className={cn("project-placeholder aspect-video", className)}
       role="img"
       aria-label={`Captura de ${project.title} pendiente`}
     >

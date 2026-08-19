@@ -115,7 +115,7 @@ function HomePage() {
           Ver trabajo <ChevronDown size={16} />
         </a>
       </section>
-      <section id="featured" className="section-space border-t border-border">
+      <section id="featured" className="border-t border-border py-20 sm:py-24">
         <Container>
           <Reveal className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
             <SectionHeading
@@ -127,10 +127,10 @@ function HomePage() {
               Ver todos <ArrowRight size={17} />
             </Link>
           </Reveal>
-          <div className="mt-12 grid gap-6 md:grid-cols-2 lg:mt-16">
+          <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {featuredProjects.map((project, index) => (
-              <Reveal key={project.id} delay={index * 80}>
-                <ProjectCard project={project} />
+              <Reveal className="h-full" key={project.id} delay={index * 80}>
+                <ProjectCard project={project} compact />
               </Reveal>
             ))}
           </div>
